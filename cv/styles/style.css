@@ -1,0 +1,332 @@
+/*
+
+  Author: Milan Matoušek
+  Date:   April 2021
+  Desc:   CSS file for CV and login system
+
+*/
+
+
+body {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+* {
+  text-decoration: none;
+}
+
+/* menu */
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #696969;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+
+.navbar ul, .mobile-navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul a {
+  float: left;
+  width: auto;
+  background-color: #696969;
+  display: inline-block;
+  color: white;
+}
+
+.navbar ul a:hover, .mobile-navbar ul a:hover {
+  background-color: black;
+}
+
+.navbar ul a li {
+  font-size: 1.5vw;
+  padding: 15px;
+  display: inline-block;
+  text-align: center;
+}
+
+/* mobile menu section (600px and less)*/
+.mobile-navbar {
+  display: none;
+  position: fixed;
+  top: 10px;
+  width: auto;
+  height: auto;
+}
+
+.mobile-navbar ul a {
+  float: right;
+  width: auto;
+  background-color: rgba(105, 105, 105, 0.8);
+  display: inline-block;
+  color: white;
+}
+
+.mobile-navbar ul a li {
+  font-size: 4vw;
+  padding: 15px;
+  display: inline-block;
+  text-align: center;
+}
+
+#mobile-navbar-items {
+  display: none;
+  top: 10px;
+  width: 100%;
+  height: auto;
+}
+
+#mobile-navbar-items ul a {
+  float: left;
+  width: auto;
+  background-color: rgba(105, 105, 105, 0.8);
+  display: block;
+}
+
+#mobile-navbar-items ul a li {
+  font-size: 4vw;
+  padding: 15px;
+  display: block;
+  text-align: center;
+}
+
+
+/* MAIN SECTION */
+.main-container {
+  overflow:hidden
+  width: 100%;
+  height: auto;
+  padding: 0;
+  display: table-row;
+}
+
+/* LEFT SECTION */
+.left {
+  box-shadow: 
+    0 4px 10px 0 rgb(0 0 0 / 20%), 
+    0 4px 20px 0 rgb(0 0 0 / 19%);
+  background-color: white;
+  width: 25%;
+  float: left;
+  margin-left: 2%;
+  display: table-cell;
+}
+
+/* IMAGE */
+.picture-container {
+  padding: 10px 10px 0 10px;
+  width: auto;
+}
+
+.picture-container img {
+  width: 100%;
+}
+
+/* Info about me */
+.left-info {
+  padding: 10px;
+}
+
+.left-info h3 {
+  font-size: 2vw;
+  margin: 0;
+}
+
+.left-info h4 {
+  font-size: 1vw;
+  margin: 0;
+}
+
+#contact {
+  padding-top: 10px;
+}
+
+/* Contacts */
+.contact {
+  width: 100%;
+  height: 100%;
+}
+
+.contact ul {
+  height: 100%;
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact ul li#contact-icon{
+  width: 20%;
+  float: left;
+}
+
+
+.contact ul li img {
+  width: 80%;
+}
+
+.contact ul li a {
+  color: black;
+}
+
+.contact ul li#contact-text {
+  font-size: 1vw;
+  padding-top: 5%;
+  width: 80%;
+  float: left;
+  text-align: left;
+}
+
+/* MIDDLE SECTION */
+.middle {
+  width: 2%;
+  float: left;
+  display: table-cell;
+}
+
+/* RIGHT SECTION */
+.right {
+  box-shadow: 
+    0 4px 10px 0 rgb(0 0 0 / 20%), 
+    0 4px 20px 0 rgb(0 0 0 / 19%);
+  background-color: white;
+  width: 70%;
+  float: right;
+  margin-right: 2%;
+  height: 100%;
+  display: table-cell;
+}
+
+.right-container {
+  padding: 10px;
+  font-size: 1vw;
+}
+
+.educ-time {
+  color: gray;
+}
+
+.text-container {
+  display: inline-block;
+  margin: 10px 0 10px 0;
+  width: 100%;
+}
+
+.skills {
+  width: 24%;
+}
+
+.lang {
+  width: 45%;
+}
+
+.text-container p {
+  margin: 0;
+}
+
+.example-link {
+  color: black;
+}
+
+/* FOOTER SECTION */
+.footer {
+  margin-top: 0.5%;
+  width: 100%;
+  height: 64px;
+  background-color: #696969;
+}
+
+.footer-text {
+  color: white;
+  text-align: center;
+  font-size: 1vw;
+  padding-top: 10px;
+}
+
+/* MAX 900px */
+@media only screen and (max-width: 900px) 
+{
+
+  /* NAVBAR 900px */
+  .navbar ul a li {
+    font-size: 3vw;
+    padding: 15px;
+  }
+
+  /* LEFT 900px */
+  .left {
+    width: 96%;
+  }
+
+  .picture-container img {
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  /* Info about me */
+  .left-info h3 {
+    text-align: center;
+    font-size: 4vw;
+  }
+
+  .left-info h4 {
+    text-align: center;
+    font-size: 3vw;
+  }
+
+  .contact ul li#contact-text {
+    font-size: 3vw;
+  }
+
+  /* MIDDLE SECTION */
+  .middle {
+    width: 100%;
+    margin: 5px;
+  }
+
+  /* RIGHT SECTION */
+  .right {
+    width: 96%;
+  }
+
+  .right-container {
+    font-size: 3vw;
+  }
+
+  .skills {
+    width: 32%;
+  }
+
+  /* FOOTER SECTION */
+  .footer {
+    height: 64px;
+  }
+
+  .footer-text {
+    font-size: 3vw;
+    padding-top: 1%;
+  }
+
+}
+
+/* MOBILE POPUP MENU */
+@media only screen and (max-width: 600px)
+{
+  /* Hide PC menu */
+  .navbar {
+    display: none;
+  }
+
+  .mobile-navbar {
+    display: block;
+  }
+}
